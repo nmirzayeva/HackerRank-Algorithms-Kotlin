@@ -1,0 +1,23 @@
+
+fun aVeryBigSum(ar: Array<Long>): Long {
+
+
+    val pow = Math.pow(10.0, 10.0).toInt()
+    var sum: Long = 0
+
+    if (ar.size in 1..10) {
+        for (i in 0..ar.size - 1) {
+
+            if (ar[i] in 0..1 * pow) {
+
+                sum += ar[i]
+
+            }
+
+        }
+    }
+
+
+    return sum
+
+}
